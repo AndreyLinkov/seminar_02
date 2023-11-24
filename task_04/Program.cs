@@ -13,8 +13,13 @@
     }
     return 0;
 }
-
-Console.Write("Введите целое число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-
-NumeralNumber(number);
+try {
+    Console.Write("Введите целое число: ");
+    int number = Convert.ToInt32(Console.ReadLine());
+    NumeralNumber(number);
+}
+catch {
+    Console.Write("Ошибка: Введите целое число: ");
+    int number = Convert.ToInt32(Console.ReadLine());
+    NumeralNumber(number);
+}
