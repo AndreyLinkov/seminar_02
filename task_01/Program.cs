@@ -16,6 +16,7 @@ namespace task_01
 
         static void Main()
         {
+            Console.Clear();
             bool inputError = true;
             do
             {
